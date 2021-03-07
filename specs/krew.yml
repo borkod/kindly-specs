@@ -1,0 +1,15 @@
+spec:
+  name: "krew"
+  description: "Krew is the package manager for kubectl plugins."
+  homepage: "https://github.com/kubernetes-sigs/krew"
+  version: "v0.4.1"
+  assets:
+    linux_amd64:
+      url: "https://github.com/kubernetes-sigs/krew/releases/download/{{.Version}}/krew.tar.gz"
+      sha_url: "https://github.com/kubernetes-sigs/krew/releases/download/{{.Version}}/krew.tar.gz.sha256"
+    windows_amd64:
+      url: "https://github.com/kubernetes-sigs/krew/releases/download/{{.Version}}/krew.exe"
+      sha_url: "https://github.com/kubernetes-sigs/krew/releases/download/{{.Version}}/krew.exe.sha256"
+  bin:
+    - "krew-{{.OS}}_{{.Arch}}"
+    - "krew"

@@ -1,0 +1,25 @@
+spec:
+  name: "doctl"
+  description: "doctl is a command-line interface (CLI) for the DigitalOcean API."
+  homepage: https://www.digitalocean.com/docs/apis-clis/doctl/
+  repo_url: https://github.com/digitalocean/doctl
+  license: Apache-2.0
+  tags:
+  - cloud
+  - command-line
+  - digitalocean
+  - hacktoberfest
+  - infrastructure
+  version: v1.57.0
+  assets:
+    darwin_amd64:
+      url: "https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-darwin-amd64.tar.gz"
+      sha_url: "https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-checksums.sha256"
+    linux_amd64:
+      url: "https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-linux-amd64.tar.gz"
+      sha_url: "https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-checksums.sha256"
+    windows_amd64:
+      url: https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-windows-amd64.zip
+      sha_url: "https://github.com/digitalocean/doctl/releases/download/{{.Version}}/doctl-1.56.0-checksums.sha256"
+  bin:
+    - "doctl"

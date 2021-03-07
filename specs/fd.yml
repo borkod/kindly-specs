@@ -1,0 +1,32 @@
+spec:
+  name: "fd"
+  description: "fd is a program to find entries in your filesytem."
+  homepage: ""
+  repo_url: https://github.com/sharkdp/fd
+  license: NOASSERTION
+  tags:
+  - cli
+  - command-line
+  - filesystem
+  - regex
+  - rust
+  - search
+  - terminal
+  - tool
+  version: v8.2.1
+  assets:
+    darwin_amd64:
+      url: "https://github.com/sharkdp/fd/releases/download/{{.Version}}/fd-{{.Version}}-x86_64-apple-darwin.tar.gz"
+    linux_amd64:
+      url: "https://github.com/sharkdp/fd/releases/download/{{.Version}}/fd-{{.Version}}-x86_64-unknown-linux-gnu.tar.gz"
+  bin:
+    - "fd"
+  completion:
+    zsh:
+      - "_fd"
+    bash: 
+      - "fd.bash-completion"
+    fish: 
+      - "fd.fish"
+  man:
+    - "fd.1"

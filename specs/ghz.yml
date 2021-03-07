@@ -1,0 +1,19 @@
+spec:
+  name: "ghz"
+  description: "gRPC benchmarking and load testing tool."
+  homepage: "https://ghz.sh/"
+  repo_url: https://github.com/bojand/ghz
+  license: Apache-2.0
+  tags:
+  - grpc
+  version: "v0.93.0"
+  assets:
+    darwin_amd64:
+      url: "https://github.com/bojand/ghz/releases/download/{{.Version}}/ghz-darwin-x86_64.tar.gz"
+      sha_url: "https://github.com/bojand/ghz/releases/download/{{.Version}}/ghz-linux-x86_64.tar.gz.sha256"
+    linux_amd64:
+      url: "https://github.com/bojand/ghz/releases/download/{{.Version}}/ghz-linux-x86_64.tar.gz"
+      sha_url: "https://github.com/bojand/ghz/releases/download/{{.Version}}/ghz-linux-x86_64.tar.gz.sha256"
+  bin:
+    - "ghz"
+    - "ghz-web"
